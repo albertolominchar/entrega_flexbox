@@ -4,18 +4,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: beige;
-  padding: 15px 10px;
+  background-color: white;
+  padding: 0px;
 }
 header > nav {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  gap: 100px;
+  gap: 250px;
 }
 h1 {
   padding: 15px 0px 0px 40px;
@@ -36,8 +41,13 @@ nav > ul {
   text-decoration: none;
   color: black;
 }
+.nav-list a:hover {
+  color: rgba(255, 153, 0, 1);
+}
 main {
   display: flex;
+  padding-top: 100px;
+  z-index: -1;
   height: 100vh;
 }
 .burger-info {
@@ -47,7 +57,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: aqua;
 }
 .burger-info > h2 {
   font-family: 'Galdeano', sans-serif;
@@ -82,13 +91,19 @@ main {
   color: rgba(87, 87, 87, 1);
 }
 .burger-info > button {
-  background-color: red;
+  background-color: rgba(234, 0, 0, 1);
   color: white;
+  border: none;
+  box-shadow: 0 5px 10px rgb(236, 165, 165);
   border-radius: 8px;
   padding: 10px 20px;
   font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
 }
-
+.btn:hover {
+  background-color: aquamarine;
+}
 main > div {
   display: flex;
   flex-grow: 1;
@@ -96,5 +111,46 @@ main > div {
 }
 #burger {
   width: 40vw;
-  background-color: blueviolet;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  padding-top: 20px;
+}
+footer > h3 {
+  font-family: 'Galada', sans-serif;
+  color: rgba(255, 153, 0, 1);
+  font-size: 35px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 15px;
+  padding: 15px;
+}
+.social-list > #logo-ig img {
+  width: 50px;
+}
+#logo-ig:hover {
+  filter: drop-shadow(5px 5px 0 rgba(234, 0, 0, 1));
+}
+.social-list > #logo-x img {
+  width: 50px;
+}
+#logo-x:hover {
+  filter: drop-shadow(5px 5px 0 rgba(234, 0, 0, 1));
+}
+.social-list > #logo-facebook img {
+  width: 50px;
+}
+#logo-facebook:hover {
+  filter: drop-shadow(5px 5px 0 rgba(234, 0, 0, 1));
+}
+footer > p {
+  font-family: 'Inter', sans-serif;
 }
