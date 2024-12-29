@@ -14,13 +14,12 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 0px;
 }
 header > nav {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  gap: 250px;
+  gap: 20vw;
 }
 h1 {
   padding: 15px 0px 0px 40px;
@@ -36,6 +35,7 @@ nav > ul {
   font-family: 'Galada', sans-serif;
   font-size: 25px;
   align-items: center;
+  padding-right: 50px;
 }
 .nav-list a {
   text-decoration: none;
@@ -46,13 +46,13 @@ nav > ul {
 }
 main {
   display: flex;
-  padding-top: 100px;
+  padding-top: 20vh;
   z-index: -1;
   height: 100vh;
 }
 .burger-info {
   padding: 75px;
-  width: 50vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,19 +90,18 @@ main {
   font-weight: 800;
   color: rgba(87, 87, 87, 1);
 }
-.burger-info > button {
+#btn-order {
   background-color: rgba(234, 0, 0, 1);
-  color: white;
-  border: none;
-  box-shadow: 0 5px 10px rgb(236, 165, 165);
-  border-radius: 8px;
   padding: 10px 20px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
+  color: white;
+  box-shadow: 0 5px 15px rgb(236, 165, 165);
+  border-radius: 8px;
   text-decoration: none;
 }
-.btn:hover {
-  background-color: aquamarine;
+#btn-order:hover {
+  color: black;
 }
 main > div {
   display: flex;
@@ -117,7 +116,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
   width: 100%;
   padding-top: 20px;
 }
@@ -133,22 +131,10 @@ footer > h3 {
   gap: 15px;
   padding: 15px;
 }
-.social-list > #logo-ig img {
+.social-logo img {
   width: 50px;
 }
-#logo-ig:hover {
-  filter: drop-shadow(5px 5px 0 rgba(234, 0, 0, 1));
-}
-.social-list > #logo-x img {
-  width: 50px;
-}
-#logo-x:hover {
-  filter: drop-shadow(5px 5px 0 rgba(234, 0, 0, 1));
-}
-.social-list > #logo-facebook img {
-  width: 50px;
-}
-#logo-facebook:hover {
+.social-logo:hover {
   filter: drop-shadow(5px 5px 0 rgba(234, 0, 0, 1));
 }
 footer > p {
