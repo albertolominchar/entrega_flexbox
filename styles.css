@@ -52,7 +52,7 @@ main {
 }
 .burger-info {
   padding: 75px;
-  width: 60vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,16 +100,12 @@ main {
   border-radius: 8px;
   text-decoration: none;
 }
-#btn-order:hover {
-  color: black;
-}
-main > div {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-}
-#burger {
+.container {
   width: 40vw;
+  background-image: url(./assets/images/burger.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 footer {
   display: flex;
@@ -139,4 +135,115 @@ footer > h3 {
 }
 footer > p {
   font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 860px) {
+  header > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  nav > ul {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .burger-info > h2 {
+    font-size: 27px;
+  }
+  .burger-info > h3 {
+    font-size: 50px;
+  }
+  .burger-info > p {
+    font-size: 12px;
+  }
+  #new-price {
+    font-size: 25px;
+  }
+  #old-price {
+    font-size: 15px;
+  }
+  main {
+    padding-top: 20vh;
+  }
+  #btn-order {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .container {
+    background-size: contain;
+  }
+  footer {
+    padding-top: 0px;
+  }
+  footer > h3 {
+    font-size: 25px;
+  }
+  .social-logo img {
+    width: 35px;
+  }
+  footer > p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #logo {
+    height: 50px;
+  }
+  nav > ul {
+    padding: 5px;
+    font-size: 15px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    gap: 15px;
+  }
+  .burger-info {
+    width: 100 vw;
+    padding: 0px;
+  }
+  .burger-info h2 {
+    font-size: 20px;
+  }
+  .burger-info > h3 {
+    font-size: 40px;
+  }
+  .price {
+    align-self: center;
+  }
+  #new-price {
+    font-size: 20px;
+  }
+  #old-price {
+    font-size: 15px;
+  }
+  #btn-order {
+    padding: 8px 17px;
+    font-size: 13px;
+    align-self: center;
+  }
+  .container {
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    order: -1;
+  }
+  footer {
+    padding-top: 50px;
+  }
+  footer > h3 {
+    font-size: 20px;
+  }
+  .social-logo img {
+    width: 30px;
+  }
+  footer > p {
+    font-size: 10px;
+  }
 }
