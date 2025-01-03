@@ -90,6 +90,7 @@ main {
   font-weight: 800;
   color: rgba(87, 87, 87, 1);
 }
+/*No consigo averiguar porque el botón con el anchor no me funciona, por lo que te agredecería en el feedback que me dieras luz sobre ello*/
 #btn-order {
   background-color: rgba(234, 0, 0, 1);
   padding: 10px 20px;
@@ -99,6 +100,11 @@ main {
   box-shadow: 0 5px 15px rgb(236, 165, 165);
   border-radius: 8px;
   text-decoration: none;
+}
+#btn-order:hover {
+  background-color: white;
+  border: 2px solid rgba(234, 0, 0, 1);
+  color: rgba(234, 0, 0, 1);
 }
 .container {
   width: 40vw;
